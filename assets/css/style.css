@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|VT323');
+
+body {
+  min-height: 100vh;
+  max-height: 100%;
+  width: 100%;
+  background: #EEE;
+  color: #222;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  min-height: 100vh;
+  max-height: 100%;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.myNav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  opacity: 0;
+  animation: fadeIn 2.5s forwards;
+}
+
+#brand {
+  font-family: 'VT323', monospace;
+  font-size: 3em;
+  padding-top: 15px;
+}
+
+#motto {
+  font-family: 'VT323', monospace;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+#links {
+  width: 100%;
+  height: 100%;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.linkIcon {
+  margin: 10px;
+  color: #222;
+}
+
+.linkIcon:hover {
+  color: #D55;
+}
+
+#projectHeader {
+  width: 45%;
+  font-size: 2em;
+  text-align: center;
+  font-family: 'VT323', monospace;
+  text-transform: uppercase;
+  border-bottom: 4px solid #222;
+  padding: 10px;
+  margin-top: 20px;
+  opacity: 0;
+  animation: fadeIn 2.5s forwards;
+}
+
+#projects {
+  width: 100%;
+  flex: 1;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 200px;
+  height: 150px;
+  border: 4px solid #222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'VT323', monospace;
+  margin: 10px;
+  opacity: 0;
+}
+
+.item p {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  border-bottom: 2px solid #222;
+}
+
+.itemLinks {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.itemLinks a {
+  margin: 0 10px;
+  font-size: 1.25em;
+  color: #D55;
+  text-transform: uppercase;
+}
+
+.fade {
+  animation: fadeIn 1.3s linear forwards;
+}
+
+#myFooter {
+  width: 100%;
+  background: #222;
+  color: #EEE;
+  font-family: 'VT323', monospace;
+  font-size: 1.25em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px; 
+}
+
+#footerContent {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#footerContent h3 {
+  padding: 10px;
+  text-align: center;
+}
+
+.footerContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #projects {
+    justify-content: center;
+  }
+  .container {
+    width: 100%;
+  }
+}
